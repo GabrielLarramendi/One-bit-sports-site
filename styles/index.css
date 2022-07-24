@@ -78,6 +78,18 @@ main {
     flex-wrap: wrap;
 }
 
+footer {
+    background-color: black;
+}
+
+.made-by {
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .cards-principais {
     width: 75%;
     display: grid;
