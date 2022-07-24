@@ -28,7 +28,8 @@ header {
 }
 
 nav img {
-    width: 250px;
+    max-width: 230px;
+    min-width: 230px;
     height: 100px;
 }
 
@@ -176,10 +177,11 @@ main {
 @media (max-width: 880px) {
     .text-apresentation h4 {
         padding: 1em 0 0 0;
+        text-align: center;
     }
 
     .text-apresentation h5 {
-        width: 50%;
+        width: 70%;
         text-align:center;
         font-size: 2em;
         font-weight: 400;
@@ -206,6 +208,10 @@ main {
 }
 
 @media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
     main {
         flex-direction: column;
     }
@@ -227,6 +233,10 @@ main {
 }
 
 @media (max-width: 430px) {
+    .text-apresentation h5 {
+        width: 90%;
+    }
+
     .cards-principais {
         padding-bottom: 20px;
     }
