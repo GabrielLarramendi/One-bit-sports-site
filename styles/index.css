@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    background-color: black;
+}
+
+nav img {
+    width: 250px;
+    height: 100px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight: 500;
+}
+
+.text-apresentation {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 2.1em;
+}
+
+.text-apresentation h4 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.text-apresentation h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+footer nav h4 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+main {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-principais {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    padding-bottom: 1.2em;
+    padding: 0 0 20px 0;
+}
+
+.card-principal {
+    max-width: 80%;
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-principal img {
+    max-width: 100%;
+    min-width: 250px;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text-card-principal {
+    text-align: center;
+    padding-top: 1.2em;
+}
+
+.text-card-principal h3 {
+    padding-bottom: 0.8em;
+}
+
+.area-esportes-extras {
+    background-color: rgb(100, 100, 100);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+    padding-top: 2em;
+}
+
+.area-esportes-extras h2 {
+    font-weight: 200;
+    color: white;
+}
+
+.cards {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 2em;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.1em;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1.2em;
+}
+
+.card > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-text {
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-text h3{
+    margin-bottom: 0.8em;
+}
+
+@media (max-width: 1024px) {
+    .cards-principais {
+        width: 70%;
+    }
+
+    .area-esportes-extras {
+        width: 30%;
+    }
+}
+
+@media (max-width: 880px) {
+    .text-apresentation h4 {
+        padding: 1em 0 0 0;
+    }
+
+    .text-apresentation h5 {
+        width: 50%;
+        text-align:center;
+        font-size: 2em;
+        font-weight: 400;
+        padding: 1.2em 0;
+    }
+
+    .cards-principais {
+        width: 60%;
+    }
+
+    .area-esportes-extras {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bar {
+        flex-direction: column;
+    }
+
+    header {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .cards-principais {
+        width: 100%;
+    }
+
+    .area-esportes-extras {
+        width: 100%;
+    }
+
+    .card > img {
+        width: 80%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 430px) {
+    .cards-principais {
+        padding-bottom: 20px;
+    }
+}
